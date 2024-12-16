@@ -1,13 +1,16 @@
 
-// const numeroSecreto = Math.floor(Math.random() * 101);
+const aleatorio = Math.floor(Math.random()*101)
 
-// let tentativas = 10;
+for (let i =1; i <= 10; i++){
+    const chute = parseInt(prompt("chute um numero:"))
+    if(chute == aleatorio){
+        console.log("parabens, chute certo")
+        break
+    }else if (chute < aleatorio){
+        console.log("seu chute foi menor")
+    }else{
+        console.log("seu chute foi maior")
+    }
+       
 
-// console.log("Bem-vindo ao jogo de adivinhação!");
-// console.log("Você tem 10 tentativas para acertar o número secreto entre 0 e 100.");
-
-// while (tentativas > 0) {
-  
-//   const palpite = parseInt(prompt("Digite seu palpite "(Tentativas restantes:):));
-
-// }
+}
